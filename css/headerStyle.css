@@ -1,0 +1,15 @@
+
+/* Header Styles */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* Navbar active link */
+.navbar .nav-link.active{
+    background: rgba(255, 255, 255, 0.161);
+    border-radius: 6px;
+    padding: 0.45rem 0.65rem;
+    color: #ffffff !important;
+    font-weight: 600;
+}

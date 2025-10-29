@@ -1,0 +1,171 @@
+/* Main Styles for InnerSource BCP Portal */
+
+:root {
+    --primary-color: #2b67c0;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --info-color: #0dcaf0;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+}
+
+html,body{
+    height:100%;
+}
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+    color: #333;
+    line-height: 1.6;
+   
+    
+}
+
+/* Slight spacing for step title when adjacent */
+.d-flex.align-items-center .step-number + h4{
+    margin-bottom:0;
+    margin-left:8px;
+    font-size:1.05rem;
+}
+
+/* Hero Section */
+header.bg-light {
+    background-color: #f8f9fa;
+    padding: 5rem 0;
+    
+}
+
+/* Card Styles */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 0.6rem;
+    overflow: visible;
+}
+
+.card .card-body {
+    padding: 1.5rem;  /* Aumenta el padding interno */
+    margin: 0.5rem;   /* Agrega margen interno */
+}
+
+.card .card-title {
+    margin-bottom: 1rem;  /* Espacio después del título */
+}
+
+.card .card-text {
+    margin-bottom: 1.2rem;  /* Espacio después del texto principal */
+}
+
+.card p {
+    margin-bottom: 1rem;  /* Espacio entre párrafos */
+}
+
+/* Ajuste para los badges de tecnologías */
+.card .mb-3 {
+    margin-bottom: 1.5rem !important;  /* Más espacio antes de los botones */
+}
+
+.card .card-header{
+    border-bottom:0;
+    font-weight:600;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-footer {
+    background-color: transparent;
+    border-top: none;
+}
+
+.tech-badge {
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Project Details */
+.project-links a {
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.project-links i {
+    margin-right: 0.25rem;
+}
+
+/* Ranking Page */
+.contributor-card {
+    border-left: 4px solid var(--primary-color);
+}
+
+.contributor-rank {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.contributor-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Teams Page */
+.team-card {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.team-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.5rem;
+}
+
+/* Information Page */
+.info-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+
+/* Contribution Guide */
+.step-number {
+    display: inline-block;
+    justify-content:center;
+    width:44px;
+    height:44px;
+    line-height: 40px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: rgb(247, 246, 246);
+    border-radius: 50%;
+    margin-right: 1rem;
+    font-weight:700;
+    font-size:1rem;
+    margin-right:12px;
+    flex: 0 0 44px;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header.bg-light {
+        padding: 3rem 0;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
+

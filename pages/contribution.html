@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerSource BCP - Guía de Contribución</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/transitions.css">
+    <link rel="stylesheet" href="../css/headerStyle.css">
+    <link rel="stylesheet" href="../css/footerStyle.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="fas fa-code-branch me-2"></i>InnerSource BCP
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/ranking.html">Ranking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/information.html">Sobre InnerSource</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/pages/contribution.html">Guía de Contribución</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/teams.html">Equipos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado de Contribución -->
+    <header class="bg-light py-5 page-transition">
+        <div class="container text-center">
+            <h1 class="display-4">Guía de Contribución</h1>
+            <p class="lead">Cómo contribuir a los proyectos InnerSource en BCP</p>
+        </div>
+    </header>
+
+    <!-- Contenido de Contribución -->
+    <section class="py-5 page-transition">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="mb-4">Introducción</h2>
+                    <p>Contribuir a los proyectos InnerSource en BCP es un proceso sencillo diseñado para ser accesible a todos los empleados, independientemente de su equipo o departamento. Esta guía te llevará a través de los pasos para hacer tu primera contribución.</p>
+                    
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <strong>Antes de comenzar:</strong> Asegúrate de tener acceso a GitHub Enterprise y Microsoft Teams. Si no lo tienes, por favor contacta a tu jefatura.
+                    </div>
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <strong>Ten en cuenta:</strong> Sigue las guías de contribución (CONTRIBUTING.md) del proyecto sobre el cual deseas hacer una contribución, para revisar requisitos específicos de cada proyecto.
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="mb-4">Flujo de Trabajo de Contribución</h2>
+                    
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="step-number">1</span>
+                                <h4 class="mb-0">Encuentra un Proyecto</h4>
+                            </div>
+                            <p>Navega por la <a href="index.html">página de Proyectos</a> para encontrar un proyecto que te interese. Cada proyecto tiene información sobre su propósito, las tecnologías utilizadas y enlaces a su documentación y repositorio.</p>
+                        </div>
+                    </div>
+                 
+                       <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="step-number">2</span>
+                                <h4 class="mb-0">Revisa la Documentación</h4>
+                            </div>
+                            <p>Lee la documentación del proyecto para entender su arquitectura, estándares de codificación y pautas de contribución. Cada proyecto puede tener requisitos específicos.</p>
+                        </div>
+                    </div>
+
+                     <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="step-number">3</span>
+                                <h4 class="mb-0">Crea un Issue en el proyecto</h4>
+                            </div>
+                            <p>Crea un Issue en el proecto en el cual quieres contribuir a través de GitHub Issues, agrega toda la información de contexto relevante para tu propuesta de contribución</p>
+                        </div>
+                    </div>
+
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="step-number">4</span>
+                                <h4 class="mb-0">Únete al Canal de Teams</h4>
+                            </div>
+                            <p>Únete al canal de Microsoft Teams para el proyecto para conectarte con el equipo y hacer cualquier pregunta que puedas tener. Este es también el lugar donde puedes hablar con el equipo owner del proyecto acerca de tu propeusta de contribución.</p>
+                        </div>
+                    </div>
+                 
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="step-number">5</span>
+                                <h4 class="mb-0">Haz un Fork del Repositorio</h4>
+                            </div>
+                            <p>Una vez aprobada tu propuesta de contribución, crea un fork del repositorio original del proyecto a tu propia cuenta de GitHub. Esto crea una copia en la que puedes trabajar sin afectar el proyecto original:<br>
+                                <span><br>1. En GitHub, entra al repositorio original (por ejemplo: github.com/org/proyecto-base).</span>
+                                <span><br>2. Haz clic en el botón "Fork" (arriba a la derecha).</span>
+                                <span><br>3. Selecciona tu usuario o tu propia organización como destino.</span>
+                                <pre class="bg-light p-3 rounded"><code>github.com/tu-usuario/proyecto-base</code></pre>
+                            </p>
+                          
+                        </div>
+                    </div>
+
+                     <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="step-number">6</span>
+                                <h4 class="mb-0">Configurar el remoto del repositorio original</h4>
+                            </div>
+                            <p>Para mantener sincronizado tu fork con el repositorio original, agrega el remoto “upstream”:<br>
+                                
+                                <pre class="bg-light p-3 rounded"><code>git remote add upstream https://github.com/org/proyecto-base.git</code></pre>
+                                <span>origin → tu fork (tienes permiso de escritura).</span>
+                                <span><br>upstream → el repositorio original (solo lectura).</span>
+                                <span><br><br>Puedes verificarlo:<br></span>
+                                 <pre class="bg-light p-3 rounded"><code>git remote -v</code></pre>
+                            </p>
+                          
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="step-number">7</span>
+                                <h4 class="mb-0">Realiza tus Cambios</h4>
+                            </div>
+                            <p>Nunca trabajes directamente en main. Crea una rama específica para tu cambio o feature:</p>
+                            <pre class="bg-light p-3 rounded"><code>git checkout -b feature/mejora-performance</code></pre>
+                            <span><br>Edita el código, agrega archivos, etc.</span>
+                            <span><br>Por ejemplo:</span>
+                            <pre class="bg-light p-3 rounded">
+<code>git add .</code>
+<code>git commit -m "Agrega sección de buenas prácticas en README"</code></pre>
+                            <span><br>Subir los cambios a tu fork</span>
+                             <pre class="bg-light p-3 rounded">
+<code>git push origin feature/mejora-performance</code></pre>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="step-number">8</span>
+                                <h4 class="mb-0">Envía un Pull Request</h4>
+                            </div>
+                            <p>1. Ve a tu fork en GitHub.<br></p>
+                                <span> GitHub te sugerirá crear un Pull Request porque detecta que tu rama difiere del original.</span>
+                            <p><br>2. Selecciona:<br></p><span>  <strong>Base repository:</strong> el repositorio original (org/proyecto-base)<br><strong>Base branch:</strong> generalmente main<br><strong>Head repository:</strong> tu fork (tu-usuario/proyecto-base)<br><strong>Compare branch:</strong> tu rama (feature/mejora-performance)</p>
+                            <p>3. Escribe un título claro y descripción del cambio según los estándares del programa de Software Engineering Excellence (SEE).</span>
+                            <p>4. Envía el Pull Request.</p>
+
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="step-number">9</span>
+                                <h4 class="mb-0">Proceso de Revisión</h4>
+                            </div>
+                            <p>Los mantenedores del proyecto revisarán tu pull request. Pueden sugerir cambios o mejoras. Sé receptivo a los comentarios y realiza los ajustes necesarios.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="mb-4">Pautas de Revisión de Código</h2>
+                    
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">Para Contribuidores</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Sé receptivo a los comentarios y preguntas</li>
+                                <li class="list-group-item">Explica tu razonamiento para las decisiones de implementación</li>
+                                <li class="list-group-item">Divide cambios grandes en pull requests más pequeños y manejables</li>
+                                <li class="list-group-item">Asegúrate de que tu código siga la guía de estilo del proyecto</li>
+                                <li class="list-group-item">Escribe mensajes de commit claros que expliquen el propósito de cada cambio</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header bg-success text-white">
+                            <h5 class="mb-0">Para Revisores</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Sé respetuoso y constructivo en tus comentarios</li>
+                                <li class="list-group-item">Enfócate en el código, no en la persona</li>
+                                <li class="list-group-item">Explica por qué se necesitan los cambios, no solo qué necesita cambiar</li>
+                                <li class="list-group-item">Reconoce el buen trabajo y las mejoras</li>
+                                <li class="list-group-item">Responde a los pull requests de manera oportuna</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="mb-4">Reconocimiento y Recompensas</h2>
+                    <p>Tus contribuciones a los proyectos InnerSource son valoradas y reconocidas en BCP. Aquí te mostramos cómo reconocemos tus esfuerzos:</p>
+                    
+                    <ul class="list-group mb-4">
+                        <li class="list-group-item">
+                            <i class="fas fa-trophy text-warning me-2"></i>
+                            <strong>Clasificaciones de Contribuidores:</strong> Los contribuyentes activos son destacados en nuestra <a href="ranking.html">página de Rankings</a>.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-certificate text-primary me-2"></i>
+                            <strong>Reconocimiento de Habilidades:</strong> Las contribuciones se reconocen en tus revisiones de desarrollo profesional.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-users text-success me-2"></i>
+                            <strong>Reconocimiento Comunitario:</strong> Reconocimientos regulares en las comunicaciones de toda la empresa.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-star text-danger me-2"></i>
+                            <strong>Campeón de InnerSource:</strong> Los principales contribuyentes pueden ser invitados a unirse al programa de Campeones de InnerSource.
+                        </li>
+                    </ul>
+                    
+                    <div class="text-center">
+                        <a href="index.html#projects" class="btn btn-primary btn-lg">Comienza a Contribuir Hoy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>InnerSource BCP</h5>
+                    <p>Fomentando la colaboración y la innovación entre equipos.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>Conéctate con Nosotros</h5>
+                    <ul class="list-inline">
+                       <a href="mailto:InnerSource@bcp.com.pe" style="margin: 10px;">InnerSource@bcp.com.pe</a>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white">
+                                <i class="fab fa-microsoft fa-lg"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 InnerSource BCP. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/data.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/transitions.js"></script>
+</body>
+</html>
